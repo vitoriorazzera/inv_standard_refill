@@ -47,7 +47,7 @@ final_data AS (
     SELECT  
         p.product_code AS `SKU`,
         p.description AS `Name`,
-        p.product_group AS 'ProductGroup',
+        p.qty_on_hand AS 'TotalSOH',
         sc.name AS `Supplier`,
         sc.id AS `Sup.Id`,
         p.default_purchase_price AS `Cost`,
